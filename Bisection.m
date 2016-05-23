@@ -1,7 +1,7 @@
-%@Using  bisection Locate the root
-%@author Khairul  
-%@5/23/2016 
-f=@(x) x^10-1;
+%@Using  bisection Locate the root of a equation
+%@author Md  Khairul  Alam Titu
+%@23may2016.
+f=@(x) x^10-1;%put your desire equation
 xl=0;
 xu=1.3;
 fl=f(xl);
@@ -12,7 +12,7 @@ disp('Ans Not Convergence');
 end
 if fl*fu < 0
       
-       disp(' Iteration    xl   xu     xr     ea(%)   et(%)'); 
+       disp(' Iteration    xl   xu     xr     Ea(%)   Et(%)'); %Percent relative error(Ea),true percent relative error(Et)
        xr=(xl+xu)/2;
        
     for k=1:5
