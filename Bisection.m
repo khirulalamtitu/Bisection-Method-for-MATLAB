@@ -11,7 +11,8 @@ if fl*fu >0
 disp('Ans Not Convergence');
 end
 if fl*fu < 0
-      
+      fl=f(xl);
+      fu=f(xu);
        disp(' Iteration    xl   xu     xr     Ea(%)   Et(%)'); %Percent relative error(Ea),true percent relative error(Et)
        xr=(xl+xu)/2;
        
